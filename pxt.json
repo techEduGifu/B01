@@ -1,6 +1,6 @@
 {
     "name": "GUB01",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "GUB01ボードのための機能拡張",
     "dependencies": {
         "core": "*",
