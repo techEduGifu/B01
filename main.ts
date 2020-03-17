@@ -13,6 +13,7 @@ namespace GUB01 {
     export function SwitchOFF(): void {
         pins.digitalWritePin(DigitalPin.P1, 0)
     }
+    
     //% blockId=GUBoard01_SwitchPWM
     //% block="スイッチを %dat ％オンにする"
     //% weight=80 blockGap=8
