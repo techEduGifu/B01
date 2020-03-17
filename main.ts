@@ -19,7 +19,7 @@ namespace GUB01 {
     //% weight=80 blockGap=8
     //% parts="GUBoard"
     //% dat.min=0 dat.max=100
-    export function SwitchPWM(dat: number): void {
+    export function SwitchPWM(dat: number): void{
         let val = (dat * 1023) / 100;
         pins.analogWritePin(AnalogPin.P1, val)
     }
