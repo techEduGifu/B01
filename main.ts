@@ -14,7 +14,7 @@ namespace GUB01 {
         pins.digitalWritePin(DigitalPin.P1, 0)
     }
     //% blockId=GUBoard01_SwitchPWM
-    //% block="スイッチを %dat ％にする"
+    //% block="スイッチを %dat ％オンにする"
     //% weight=80 blockGap=8
     //% parts="GUBoard"
     //% dat.min=0 dat.max=100
