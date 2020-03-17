@@ -8,7 +8,7 @@ namespace GUB01 {
     }
 
     //% blockId=GUBoard01_SwitchPWM
-    //% block="スイッチをオン[ %Value ％]にする"
+    //% block="スイッチをオンにする（%Value ％）"
     //% weight=80 blockGap=8
     //% parts="GUBoard"
     //% Value.min=0 Value.max=100
