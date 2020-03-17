@@ -1,4 +1,4 @@
-//% weight=100 color=#A040E0 icon="\uf0eb" block="拡張ボード （GUB01）"
+//% weight=100 color=#A040E0 icon="\uf0eb" block="拡張ボード（GUB01）"
 namespace GUB01 {
     //% blockId=GUBoard01_SwitchON block="スイッチをオンにする"
     //% weight=80 blockGap=8
