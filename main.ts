@@ -6,22 +6,23 @@ namespace GUB01 {
     export function SwitchON(): void {
         pins.digitalWritePin(DigitalPin.P1, 1)
     }
+
+    //% blockId=GUBoard01_SwitchPWM
+    //% block="スイッチをオン[ %Value ％]にする"
+    //% weight=80 blockGap=8
+    //% parts="GUBoard"
+    //% Value.min=0 Value.max=100
+    export function SwitchPWM(Value: number): void {
+        let val = (Value * 1023) / 100;
+        pins.analogWritePin(AnalogPin.P1, val)
+    }
+
     //% blockId=GUBoard01_SwitchOFF
     //% block="スイッチをオフにする"
     //% weight=80 blockGap=8
     //% parts="GUBoard"
     export function SwitchOFF(): void {
         pins.digitalWritePin(DigitalPin.P1, 0)
-    }
-    
-    //% blockId=GUBoard01_SwitchPWM
-    //% block="スイッチをオン( %dat ％)にする"
-    //% weight=80 blockGap=8
-    //% parts="GUBoard"
-    //% dat.min=0 dat.max=100
-    export function SwitchPWM(dat: number): void{
-        let val = (dat * 1023) / 100;
-        pins.analogWritePin(AnalogPin.P1, val)
     }
 
     //% blockId=GUBoard01_Sensor
