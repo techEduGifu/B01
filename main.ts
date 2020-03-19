@@ -1,9 +1,10 @@
 //% weight=100 color=#A040E0 icon="\uf0eb" block="拡張ボード（B01）"
 namespace Board01 {
-    //% blockId=GUBoard01_SwitchON block="スイッチをオンにする"
+    //% blockId=B01_SwitchON block="スイッチをオンにする"
     //% weight=80 blockGap=8
     //% parts="Board01"
     export function SwitchON(): void {
+        
         pins.digitalWritePin(DigitalPin.P1, 1)
     }
 
