@@ -1,5 +1,5 @@
 {
-    "name": "B01",
+    "name": "拡張ボードB01",
     "version": "0.0.12",
     "description": "拡張ボードB01のための機能拡張",
     "dependencies": {
@@ -15,5 +15,5 @@
     ],
     "public": false,
     "preferredEditor": "tsprj",
-    "installedVersion": "workspace:f2e8a02b-f0fc-46cb-701d-b1216f6a4b56"
+    "installedVersion": "workspace:dc5d85cd-3e64-47af-a98f-483c8f149ebf"
 }
