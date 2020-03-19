@@ -1,7 +1,7 @@
 {
-    "name": "GUB01",
+    "name": "B01",
     "version": "0.0.10",
-    "description": "GUB01ボードのための機能拡張",
+    "description": "拡張ボードB01のための機能拡張",
     "dependencies": {
         "core": "*",
         "radio": "*"

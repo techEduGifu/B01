@@ -1,34 +1,34 @@
-//% weight=100 color=#A040E0 icon="\uf0eb" block="拡張ボード（GUB01）"
-namespace GUB01 {
+//% weight=100 color=#A040E0 icon="\uf0eb" block="拡張ボード（B01）"
+namespace Board01 {
     //% blockId=GUBoard01_SwitchON block="スイッチをオンにする"
     //% weight=80 blockGap=8
-    //% parts="GUBoard"
+    //% parts="Board01"
     export function SwitchON(): void {
         pins.digitalWritePin(DigitalPin.P1, 1)
     }
 
-    //% blockId=GUBoard01_SwitchPWM
+    //% blockId=B01_SwitchPWM
     //% block="スイッチをオンにする（%Value ％）"
     //% weight=80 blockGap=8
-    //% parts="GUBoard"
+    //% parts="Board01"
     //% Value.min=0 Value.max=100
     export function SwitchPWM(Value: number): void {
         let val = (Value * 1023) / 100;
         pins.analogWritePin(AnalogPin.P1, val)
     }
 
-    //% blockId=GUBoard01_SwitchOFF
+    //% blockId=B01_SwitchOFF
     //% block="スイッチをオフにする"
     //% weight=80 blockGap=8
-    //% parts="GUBoard"
+    //% parts="Board01"
     export function SwitchOFF(): void {
         pins.digitalWritePin(DigitalPin.P1, 0)
     }
 
-    //% blockId=GUBoard01_Sensor
+    //% blockId=B01_Sensor
     //% block="人感センサが反応した"
     //% weight=80 blockGap=8
-    //% parts="GUBoard"
+    //% parts="Board01"
     export function IsDetected(): boolean {
         if (pins.digitalReadPin(DigitalPin.P2) == 1)
             return true;
