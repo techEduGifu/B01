@@ -4,7 +4,6 @@ namespace Board01 {
     //% block="スイッチをオンにする"
     //% weight=80 blockGap=8
     export function SwitchON(): void {
-        
         pins.digitalWritePin(DigitalPin.P1, 1)
     }
 
