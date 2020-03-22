@@ -1,7 +1,8 @@
 //% weight=100 color=#FF9933 icon="\uf0eb" block="拡張ボード（B01）"
 namespace Board01 {
     //% blockId=B01_SwitchON
-    //% block="スイッチをオンにする"
+    //% block="SwitchON"
+    //% block.loc.ja="スイッチをオンにする"
     //% weight=80 blockGap=8
     export function SwitchON(): void {
         
@@ -9,7 +10,8 @@ namespace Board01 {
     }
 
     //% blockId=B01_SwitchPWM
-    //% block="スイッチをオンにする（%Value ％）"
+    //% block="SwitchON (%Value ％)"
+    //% block.loc.ja="スイッチをオンにする（%Value ％）"
     //% weight=80 blockGap=8
     //% Value.min=0 Value.max=100 Value.defl=100
     export function SwitchPWM(Value: number): void {
@@ -18,14 +20,16 @@ namespace Board01 {
     }
 
     //% blockId=B01_SwitchOFF
-    //% block="スイッチをオフにする"
-    //% weight=80 blockGap=8
+    //% block="SwithOFF"
+    //% block.loc.ja="スイッチをオフにする"
+    //% weight=80 blockGap=8e
     export function SwitchOFF(): void {
         pins.digitalWritePin(DigitalPin.P1, 0)
     }
 
     //% blockId=B01_Sensor
-    //% block="人感センサが反応した"
+    //% block="IsDetected"
+    //% block.loc.ja="人感センサが反応した"
     //% weight=80 blockGap=8
     export function IsDetected(): boolean {
         if (pins.digitalReadPin(DigitalPin.P2) == 1)
