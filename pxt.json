@@ -1,6 +1,6 @@
 {
     "name": "拡張ボードB01",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "description": "拡張ボードB01のための機能拡張",
     "dependencies": {
         "core": "*",
