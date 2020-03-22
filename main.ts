@@ -2,7 +2,7 @@
 namespace Board01 {
     //% blockId=B01_SwitchON
     //% block="SwitchON"
-    //% block.loc.ja-JP="スイッチをオンにする"
+    //% block.loc.ja-jp="スイッチをオンにする"
     //% weight=80 blockGap=8
     export function SwitchON(): void {
         
@@ -11,7 +11,7 @@ namespace Board01 {
 
     //% blockId=B01_SwitchPWM
     //% block="SwitchON (%Value ％)"
-    //% block.loc.ja-JP="スイッチをオンにする（%Value ％）"
+    //% block.loc.jp="スイッチをオンにする（%Value ％）"
     //% weight=80 blockGap=8 advanced=true
     //% Value.min=0 Value.max=100 Value.defl=100
     export function SwitchPWM(Value: number): void {
@@ -21,7 +21,7 @@ namespace Board01 {
 
     //% blockId=B01_SwitchOFF
     //% block="SwithOFF"
-    //% block.loc.ja-JP="スイッチをオフにする"
+    //% block.loc.ja_jp="スイッチをオフにする"
     //% weight=80 blockGap=8e
     export function SwitchOFF(): void {
         pins.digitalWritePin(DigitalPin.P1, 0)
@@ -29,7 +29,7 @@ namespace Board01 {
 
     //% blockId=B01_Sensor
     //% block="IsDetected"
-    //% block.loc.ja-JP="人感センサが反応した"
+    //% block.loc.ja="人感センサが反応した"
     //% weight=80 blockGap=8
     export function IsDetected(): boolean {
         if (pins.digitalReadPin(DigitalPin.P2) == 1)
