@@ -1,4 +1,4 @@
-//% weight=100 color=#A040E0 icon="\uf0eb" block="拡張ボード（B01）"
+//% weight=100 color=#ffcc33 icon="\uf0eb" block="拡張ボード（B01）"
 namespace Board01 {
     //% blockId=B01_SwitchON
     //% block="スイッチをオンにする"
