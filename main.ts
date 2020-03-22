@@ -12,7 +12,7 @@ namespace Board01 {
     //% blockId=B01_SwitchPWM
     //% block="SwitchON (%Value ％)"
     //% block.loc.ja="スイッチをオンにする（%Value ％）"
-    //% weight=80 blockGap=8
+    //% weight=80 blockGap=8 advanced=true
     //% Value.min=0 Value.max=100 Value.defl=100
     export function SwitchPWM(Value: number): void {
         let val = (Value * 1023) / 100;
